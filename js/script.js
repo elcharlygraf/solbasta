@@ -81,6 +81,10 @@ if ($('#subastas .envivo').length > 0) {
 		var anchoContenedor = $lasImagenes.css('width'); 
 		var anchoElementoA = $lasImagenes.find('a').css('width'); 
 		var marginLeft = $lasImagenes.css('margin-left');
+
+		console.log(marginLeft);
+		console.log(anchoElementoA);
+
 		if ($(this).index() == 2) {
 			//console.log('margin left: ' + marginLeft + ', ancho contenedor: ' + anchoContenedor + ', ancho de elemento A: ' + anchoElementoA);
 			if (limpiaPixelesyMas(marginLeft) < (limpiaPixelesyMas(anchoContenedor) - limpiaPixelesyMas(anchoElementoA))) {
@@ -96,7 +100,7 @@ if ($('#subastas .envivo').length > 0) {
 			} 
 		}		
 	});
-};	
+};
 
 /* MINI SLIDER DE 'DETALLE DE SUBASTA' */
 var $ms = $('#mini-slider #imagenes');

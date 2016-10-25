@@ -10,7 +10,9 @@
   </head>
   <body class="home">
     <header>
-      <div class="am"><a href="index.html" title="Portada" id="logo">SolBasta</a>
+      <div class="am">
+        <a href="index.html" title="Portada" id="logo">SolBasta</a>
+
         <nav class="menu">
           <ul>
             <li><a href="subastas-en-vivo.html" title="#"><span>Subastas</span>En vivo</a></li>
@@ -34,6 +36,27 @@
             -->
           </ul>
         </nav>
+        
+        <div class="menunav-colp">
+          <div class="barmenu"></div>
+          <div class="barmenu"></div>
+          <div class="barmenu"></div>
+        </div>
+        <div class="menufloat">
+          
+          <div>
+            <ul class="menu-nav-float">
+              <li><a href="subastas-en-vivo.html" title="#"><span>Subastas</span>En vivo</a></li>
+              <li><a href="subastas-terminadas.html" title="#"><span>Subastas</span> Terminadas</a></li>
+              <li><a href="subastas-proximas.html" title="#"><span>Subastas</span> Proximas</a></li>
+              <li><a href="subastas-categorias.html" title="#">Categorias</a></li>
+              <li class="como"><a href="como-juego.html" title="#">Como juego</a></li>
+              <li class="anaranjado"><a href="testimonios.html" title="#">Testimonios</a></li>
+            </ul>
+          </div>
+
+        </div>
+
         <div id="usuario">
           <div id="opciones"><a href="registrarte.html" title="Registrarse">Registrarte</a><a href="iniciar-sesion.html" title="Iniciar Sesión">Iniciar Sesión</a></div>
           <!--span Hola,
@@ -163,7 +186,8 @@
           </div><a href="subastas-en-vivo.html" title="Ver todas las subastas en vivo" class="todas">Mira todas las subastas</a>
         </section>
         <hr>
-        <!--section class="destacadas">
+
+        <section class="destacadas">
           <h2>Destacadas</h2>
           <div class="limpias">
             <article><a href="#" title="Iphone 6S"><img src="imagenes/destacadas/1.png" alt="Iphone 6S"></a>
@@ -191,7 +215,8 @@
               </header>
             </article>
           </div>
-        </section-->
+        </section>
+
         <hr class="nc">
         <section class="proximas nc">
           <h2>Proximas subastas<span>¡No te las pierdas!</span></h2>
@@ -320,5 +345,35 @@
       </aside>
     </footer>
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+      $('.menunav-colp').on('click', function(){
+        $(".menufloat").slideToggle( "slow", function() {
+          // Animation complete.
+        });
+      });
+    /*
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+      function toggleMenu(){
+        $menu.classList.toggle('active')
+      };
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          // si se cumple hagamos esto
+          console.log('se cumplió la condicion');
+          $burguerButton.addEventListener('touchstart', toggleMenu);
+        } else {
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
+          // si no se cumple hagamos esto
+          console.log('no se cumplió la condicion');
+        }
+      }
+      mediaQuery();
+    */
+    </script>
   </body>
 </html>
