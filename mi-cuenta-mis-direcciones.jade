@@ -1,0 +1,224 @@
+doctype html
+html(lang="es")
+	head
+		title Solbasta | Mi Cuenta &raquo; Editar información
+		meta(charset="utf-8")
+		meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(rel="stylesheet" href="style.css")
+		link(rel="stylesheet" href="webicons/styles.css")
+		script(type="text/javascript", src="jquery-3.1.1.min.js")
+			
+	body
+		header
+			.am
+				a(href="index.html", title="Portada")#logo SolBasta
+				nav
+					ul
+						li: a(href="subastas-en-vivo.html", title="#")
+							span Subastas
+							| En vivo
+						li: a(href="subastas-terminadas.html", title="#")
+							span Subastas
+							|  Terminadas
+						li: a(href="subastas-proximas.html", title="#")
+							span Subastas
+							|  Proximas
+						li: a(href="subastas-categorias.html", title="#") Categorias
+						li.como: a(href="como-juego.html", title="#") Como juego
+						//li.anaranjado: a(href="testimonios.html", title="#") Testimonios
+						li.anaranjado: a(href="comprar-solsasos.html", title="#") Comprar solsasos
+						li.cuenta
+							a(href="mi-cuenta-resumen.html", title="#") Mi cuenta
+							ul
+								li: a(href="mi-cuenta-resumen.html", title="#").icon-usuario Resumen
+								li: a(href="mi-cuenta-editar-informacion.html", title="#").icon-editar Editar informacion
+								li: a(href="mi-cuenta-mis-direcciones.html", title="#").icon-marcador Mis direcciones
+								li: a(href="mi-cuenta-historial-de-solsasos.html", title="#").icon-archivos Historial de solsazos
+								li: a(href="mi-cuenta-subastas-ganadas.html", title="#").icon-copa Subastas ganadas
+								li: a(href="mi-cuenta-pagos.html", title="#").icon-billete Pagos
+								li: a(href="mi-cuenta-invitados.html", title="#").icon-usuarios Invitados
+
+				#usuario
+					//#opciones
+						a(href="registrarse-html", title="Registrarse") Registrarse
+						a(href="iniciar-sesion.html", title="Iniciar Sesión") Iniciar Sesión
+					span Hola,
+							b  verocn1093
+							|  tienes
+							b  10
+							|  solsazo(s) disponibles
+		
+		main#mi-cuenta
+			.am
+				.sub-navegacion
+					nav
+						ul
+							li: a(href="mi-cuenta-resumen.html", title="#").icon-usuario Resumen
+							li: a(href="mi-cuenta-editar-informacion.html", title="#").icon-editar Editar informacion
+							li: a(href="mi-cuenta-mis-direcciones.html", title="#").icon-marcador.activo Mis direcciones
+							li: a(href="mi-cuenta-historial-de-solsasos.html", title="#").icon-archivos Historial de solsazos
+							li: a(href="mi-cuenta-subastas-ganadas.html", title="#").icon-copa Subastas ganadas
+							li: a(href="mi-cuenta-pagos.html", title="#").icon-billete Pagos
+							li: a(href="mi-cuenta-invitados.html", title="#").icon-usuarios Invitados
+					ul.extra
+						li
+							a#micodigo(href="#", title="Copiar mi código") Solsasos Gratis
+								span Este es tu codigo
+									span.icon-ticket WE66VBDD
+									| Compartelo con tus amigos para que lo ingresen en su registro y
+									b  gana solsazos.
+						li: a(href="#", title="#") Compra solsazos
+						li: a(href="#", title="#") Ayuda
+
+				section#mis-direcciones
+					h1
+						span Mis direcciones
+					.desarrollo
+
+						.resumen
+							i.icon-marcador
+							i.icon-camion
+
+							p
+								span.icon-marcador Mi dirección
+								span.icon-lapiz2.activo Calle mi dirección 123, Mi Distrito
+							p
+								span.icon-camion Dirección de entrega
+								span.icon-lapiz2 Calle mi dirección 123, Mi Distrito	
+							
+							button Guardar cambios
+
+						.formularios
+							form
+								h3
+									i.icon-marcador
+									| Editando Mi Dirección
+								p
+									select(name="pais")
+										option(value="PE", selected) Perú
+										option(value="MX") México
+										option(value="otro") Otro pais XD
+									span.icon-usuario
+								p
+									select(name="provincia")
+										option(value="lima", selected) Lima
+										option(value="chosica") Chosica
+										option(value="otro") Otro XD
+									span.icon-email
+								p
+									select(name="distrito")
+										option(value="lima", selected) Lima
+										option(value="san-miguel") San Miguel
+										option(value="otro") Otro XD
+									span.icon-email		
+								p
+									select(name="localidad")
+										option(value="san-borja", selected) San Borja
+										option(value="otra") otra localidad XD
+									span.icon-usuario2
+								p
+									input(name="direccion", placeholder="Dirección", type="text", value="Calle lugar 123, San Borja")
+									span.icon-telefono
+								p
+									input(name="referencia", placeholder="Referencia", type="text", value="")
+									span.icon-torta2
+								p
+									input(name="destinatario", placeholder="Nombre del destinatario", type="text", value="")
+									span.icon-torta2		
+								p
+									input(id="misma-direccion", type="checkbox", value="usar-misma-direccion")
+									label(for="misma-direccion") Usar 'Mi dirección' como dirección de entrega
+							form
+								h3
+									i.icon-camion
+									| Editando Mi Dirección de Entrega
+								p
+									select(name="pais")
+										option(value="PE", selected) Perú
+										option(value="MX") México
+										option(value="otro") Otro pais XD
+									span.icon-usuario
+								p
+									select(name="provincia")
+										option(value="lima", selected) Lima
+										option(value="chosica") Chosica
+										option(value="otro") Otro XD
+									span.icon-email
+								p
+									select(name="distrito")
+										option(value="lima", selected) Lima
+										option(value="san-miguel") San Miguel
+										option(value="otro") Otro XD
+									span.icon-email		
+								p
+									select(name="localidad")
+										option(value="san-borja", selected) San Borja
+										option(value="otra") otra localidad XD
+									span.icon-usuario2
+								p
+									input(name="direccion", placeholder="Dirección", type="text", value="Calle lugar 123, San Borja")
+									span.icon-telefono
+								p
+									input(name="referencia", placeholder="Referencia", type="text", value="")
+									span.icon-torta2
+								p
+									input(name="destinatario", placeholder="Nombre del destinatario", type="text", value="")
+									span.icon-torta2		
+						p#direcciones.accesos-directos
+							button.activo: span.icon-marcador
+							button: span.icon-camion
+		footer
+			.am
+				.promo-redes
+						h2 
+							span Entérate de
+							| Promociones y novedades
+							span únicas en:
+						a(href="#", title="Facebook").icon-facebook: span Facebook 
+						a(href="#", title="Youtube").icon-youtube: span Youtube
+						a(href="#", title="Instagram").icon-instagram: span Instagran
+				.desarrollo
+					.testimonio
+						h3 Testimonios
+						p 
+							span
+							| Gracias solbasta, por el play station 4, solo con 3 ofertas me lo gane. Muy seguros y efectivos.
+							span
+					.enlaces
+						.lista
+							h3 Acerca de Solbasta
+							ul
+								li: a(href="#", title="#") ¿Que es solbasta?
+								li: a(href="#", title="#") ¿Quienes somos?
+								li: a.resalte(href="#", title="#") Tipos de subastas
+								li: a.activo(href="#", title="#") Testimonios
+								li: a(href="#", title="#") Registrate ahora
+						.lista
+							h3 Servicio al cliente
+							ul
+								li: a(href="#", title="#") Ayuda y soporte
+								li: a(href="#", title="#") ¿Como funciona?
+								li: a(href="#", title="#") Preguntas frecuentes
+								li: a(href="#", title="#") Politica de envios
+								li: a(href="#", title="#") Contáctanos
+						.lista
+							h3 Políticas y condiciones
+							ul
+								li: a(href="#", title="#") Política de privacidad
+								li: a(href="#", title="#") Política de garantía y devoluciones
+								li: a(href="#", title="#") Terminos y condiciones
+								li: a(href="#", title="#") No es un juego de azar
+								li: a.resalte(href="#", title="#") Libro de reclamaciones
+					.tarjetas
+						h2 Paga con:
+						a(href="#", title="Pago Efectivo")
+							img(src="imagenes/pago-efectivo.png" alt="Pago efectivo")
+						a(href="#", title="Paypal")
+							img(src="imagenes/paypal.png" alt="Paypal")
+						a(href="#", title="Visa, Mastercard, Dinners Club, Discover, American Express")
+							img(src="imagenes/tarjetas.png" alt="Visa, Mastercard, Dinners Club, Discover, American Express")
+				
+			aside
+				.am 
+					p Todos los derechos reservados. El uso de éste sitio web implica la aceptación de los Términos y Condiciones de Uso y Política de Privacidad de Solbasta S.R.L * Porcentajes de ahorro referenciales, el ahorro total depende de los soles utilizados para ofertar.
+		script(type="text/javascript", src="js/script.js")				

@@ -1,0 +1,31 @@
+*** Fondo blanco:
+
+	Home
+	Subastas
+		en vivo
+		terminadas
+		proximas
+	Mi cuenta:
+		Resumen
+		Editar información
+		Mis direcciones
+		Historial de solsazos
+		Subastas ganadas
+		Pagos
+		Invitados
+	Como juego
+	Terminos y condiciones de uso
+	Politica de privacidad
+	Información y soporte
+	Preguntas frecuentes
+
+
+*** Fondo maiz:
+	Detalles de Subasta
+	Inicio de sesión
+	Registrarte
+	Contáctanos
+	Revisa tu mail
+	Tipos de subastas
+	Compra solsazos
+	Gracias por tu compra

@@ -1,0 +1,308 @@
+doctype html
+html(lang="es")
+	head
+		title Solbasta | Mi Cuenta &raquo; Resumen
+		meta(charset="utf-8")
+		meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(rel="stylesheet" href="style.css")
+		link(rel="stylesheet" href="webicons/styles.css")
+		script(type="text/javascript", src="jquery-3.1.1.min.js")
+			
+	body
+		header
+			.am
+				a(href="index.html", title="Portada")#logo SolBasta
+				nav
+					ul
+						li: a(href="subastas-en-vivo.html", title="#")
+							span Subastas
+							| En vivo
+						li: a(href="subastas-terminadas.html", title="#")
+							span Subastas
+							|  Terminadas
+						li: a(href="subastas-proximas.html", title="#")
+							span Subastas
+							|  Proximas
+						li: a(href="subastas-categorias.html", title="#") Categorias
+						li.como: a(href="como-juego.html", title="#") Como juego
+						//li.anaranjado: a(href="testimonios.html", title="#") Testimonios
+						li.anaranjado: a(href="comprar-solsasos.html", title="#") Comprar solsasos
+						li.cuenta
+							a(href="mi-cuenta-resumen.html", title="#") Mi cuenta
+							ul
+								li: a(href="mi-cuenta-resumen.html", title="#").icon-usuario Resumen
+								li: a(href="mi-cuenta-editar-informacion.html", title="#").icon-editar Editar informacion
+								li: a(href="mi-cuenta-mis-direcciones.html", title="#").icon-marcador Mis direcciones
+								li: a(href="mi-cuenta-historial-de-solsasos.html", title="#").icon-archivos Historial de solsazos
+								li: a(href="mi-cuenta-subastas-ganadas.html", title="#").icon-copa Subastas ganadas
+								li: a(href="mi-cuenta-pagos.html", title="#").icon-billete Pagos
+								li: a(href="mi-cuenta-invitados.html", title="#").icon-usuarios Invitados
+
+				#usuario
+					//#opciones
+						a(href="registrarse-html", title="Registrarse") Registrarse
+						a(href="iniciar-sesion.html", title="Iniciar Sesión") Iniciar Sesión
+					span Hola,
+							b  verocn1093
+							|  tienes
+							b  10
+							|  solsazo(s) disponibles
+		
+		main#mi-cuenta
+			.am
+				.sub-navegacion
+					nav
+						ul
+							li: a(href="mi-cuenta-resumen.html", title="#").icon-usuario.activo Resumen
+							li: a(href="mi-cuenta-editar-informacion.html", title="#").icon-editar Editar informacion
+							li: a(href="mi-cuenta-mis-direcciones.html", title="#").icon-marcador Mis direcciones
+							li: a(href="mi-cuenta-historial-de-solsasos.html", title="#").icon-archivos Historial de solsazos
+							li: a(href="mi-cuenta-subastas-ganadas.html", title="#").icon-copa Subastas ganadas
+							li: a(href="mi-cuenta-pagos.html", title="#").icon-billete Pagos
+							li: a(href="mi-cuenta-invitados.html", title="#").icon-usuarios Invitados
+					ul.extra
+						li
+							a#micodigo(href="#", title="Copiar mi código") Solsasos Gratis
+								span Este es tu codigo
+									span.icon-ticket WE66VBDD
+									| Compartelo con tus amigos para que lo ingresen en su registro y
+									b  gana solsazos.
+
+						li: a(href="#", title="#") Compra solsazos
+						li: a(href="#", title="#") Ayuda
+				section#resumen
+					h1
+						span Resumen
+					.desarrollo
+						a(href="mi-cuenta-editar-informacion.html", title="Editar").icon-editar Editar
+						img(src="imagenes/avatar.png" alt="Avatar")#avatar
+						h2 verocn1093
+							span Veronica Campos
+							span verockn1093@hotmail.com
+						ul
+							li
+								span.icon-telefono
+								| Numero de contacto
+								span 991234567
+							li
+								span.icon-megafono
+								| Codigo 'Gana Solsazos'
+								span MiCodigo123
+							li
+								span.icon-marcador
+								| Direccion de entrega
+								span Calle mi direccion 123, mi distrito
+						p#iconos.accesos-directos
+							button: span.icon-archivos2
+							button: span.icon-play
+							button: span.icon-camara
+							button: span.icon-reloj
+							button: span.icon-regalo
+					ul.numeros
+						li
+							span Tienes
+							span 10
+							span Solzasos
+							span para ofertar y ganar
+							a(href="#", title="Compra y gana") Compra y gana
+						li
+							span: img(src="imagenes/proxima1.png", alt="Última subasta ganada")
+							span
+								span 3
+								span
+									span Subasta(s)
+									span ganada(s)
+						li
+							span: img(src="imagenes/terminadas/2.png", alt="Última subasta ganada").sepia
+							span
+								span 0
+								span
+									span Subasta(s)
+									span por pagar
+						li
+							span 2
+							span invitados pendientes
+							a(href="#", title="Invita más amigos") Invita mas amigos
+					#secciones
+						section.suscripcion
+							h2 Mi suscripción
+							.contenedor
+								.articulos
+									article.accion
+										h3 Si no deseas recibir más promociones en tu correo electrónico, por favor, da click aquí:
+										button Cancelar suscripción
+						section.videos
+							h2 Mis Videos
+							.contenedor
+								.articulos
+									-for(var v = 0; v <= 4; v++)
+										article
+											.imagen
+												img(src="imagenes/hombre.png")
+											.texto
+												h3 
+													span Tesminio de
+													|  Monopoly #{v + 1}
+												a(href="#", title="#") Ver video
+									article.accion
+										.imagen
+												span.icon-play
+										.texto
+											h3 Agrega un video
+												span y gana solsazos
+											a(href="#", title="#") Sube un video
+							button: span.icon-flecha-izquierda
+							button: span.icon-flecha-derecha
+						section.fotos
+							h2 Mis Fotos
+							.contenedor
+								.articulos
+									-for(var v = 0; v <= 4; v++)
+										article
+											.imagen
+												img(src="imagenes/hombre.png")
+											.texto
+												h3 
+													span Foto de
+													|  Monopoly #{v + 1}
+												a(href="#", title="#") Ver foto
+									article.accion
+										.imagen
+												span.icon-camara
+										.texto
+											h3 Agrega una foto
+												span y gana solsazos
+											a(href="#", title="#") Sube una foto
+							button: span.icon-flecha-izquierda
+							button: span.icon-flecha-derecha
+						section.recordatorios
+							h2 Mis recordatorios
+							.contenedor
+								.articulos
+									-for(var r = 0; r <= 7; r++)
+										article
+											button 
+												span.icon-equis
+												|	Eliminar
+											.imagen
+												img(src="imagenes/proximas/proximas/#{r + 1}.png")
+											.texto
+												p
+													time(datetime="2015-05-17") 
+														b Martes 1#{r + 1}
+														| /05/16
+													| 1#{r + 1}:00:00 PM
+												h3 Mochila Adidas
+												h4 precio de mercado
+													b  s/.#{r + 1}00
+												a(href="#", title="#") Descripción
+									article.accion
+										.imagen.sepia
+											img(src="imagenes/proxima1.png")
+										.texto
+											h3 Agrega un recordatorio
+											h4 Que no se te pasen las subastas
+											a(href="#", title="#") Subastas en vivo
+							button: span.icon-flecha-izquierda
+							button: span.icon-flecha-derecha
+						section.regalos
+							h2 Mis Regalos
+							.contenedor
+								.articulos
+									article
+										.imagen
+											span.icon-facebook
+										.texto
+											h3 
+												span Ganaste este codigo
+												| Para canejar solsazos
+											b FRT4582T
+									article
+										.imagen
+											span.icon-twitter
+										.texto
+											h3 
+												span Ganaste este codigo
+												| Para canejar solsazos
+											b FRT4582T
+									article
+										.imagen
+											span.icon-instagram
+										.texto
+											h3 
+												span Ganaste este codigo
+												| Para canejar solsazos
+											b FRT4582T	
+									article
+										.imagen
+											span.icon-facebook
+										.texto
+											h3 
+												span Ganaste este codigo
+												| Para canejar solsazos
+											b FRT4582T	
+									article.accion
+											h3
+												span No tienes regalos
+												| Ve a nuestros fan page
+											p
+												a(href="#", title="Facebook").icon-facebook: span Facebook 
+												a(href="#", title="Instagram").icon-instagram: span Instagran
+												a(href="#", title="Youtube").icon-twitter: span Twitter
+							button: span.icon-flecha-izquierda
+							button: span.icon-flecha-derecha			
+		footer
+			.am
+				.promo-redes
+						h2 
+							span Entérate de
+							| Promociones y novedades
+							span únicas en:
+						a(href="#", title="Facebook").icon-facebook: span Facebook 
+						a(href="#", title="Youtube").icon-youtube: span Youtube
+						a(href="#", title="Instagram").icon-instagram: span Instagran
+				.desarrollo
+					.testimonio
+						h3 Testimonios
+						p 
+							span
+							| Gracias solbasta, por el play station 4, solo con 3 ofertas me lo gane. Muy seguros y efectivos.
+							span
+					.enlaces
+						.lista
+							h3 Acerca de Solbasta
+							ul
+								li: a(href="#", title="#") ¿Que es solbasta?
+								li: a(href="#", title="#") ¿Quienes somos?
+								li: a.resalte(href="#", title="#") Tipos de subastas
+								li: a.activo(href="#", title="#") Testimonios
+								li: a(href="#", title="#") Registrate ahora
+						.lista
+							h3 Servicio al cliente
+							ul
+								li: a(href="#", title="#") Ayuda y soporte
+								li: a(href="#", title="#") ¿Como funciona?
+								li: a(href="#", title="#") Preguntas frecuentes
+								li: a(href="#", title="#") Politica de envios
+								li: a(href="#", title="#") Contáctanos
+						.lista
+							h3 Políticas y condiciones
+							ul
+								li: a(href="#", title="#") Política de privacidad
+								li: a(href="#", title="#") Política de garantía y devoluciones
+								li: a(href="#", title="#") Terminos y condiciones
+								li: a(href="#", title="#") No es un juego de azar
+								li: a.resalte(href="#", title="#") Libro de reclamaciones
+					.tarjetas
+						h2 Paga con:
+						a(href="#", title="Pago Efectivo")
+							img(src="imagenes/pago-efectivo.png" alt="Pago efectivo")
+						a(href="#", title="Paypal")
+							img(src="imagenes/paypal.png" alt="Paypal")
+						a(href="#", title="Visa, Mastercard, Dinners Club, Discover, American Express")
+							img(src="imagenes/tarjetas.png" alt="Visa, Mastercard, Dinners Club, Discover, American Express")
+				
+			aside
+				.am 
+					p Todos los derechos reservados. El uso de éste sitio web implica la aceptación de los Términos y Condiciones de Uso y Política de Privacidad de Solbasta S.R.L * Porcentajes de ahorro referenciales, el ahorro total depende de los soles utilizados para ofertar.
+		script(type="text/javascript", src="js/script.js")				

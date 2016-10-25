@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Solbasta | Detalles de la subasta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="webicons/styles.css">
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  </head>
+  <body class="subasta">
+    <header>
+      <div class="am"><a href="index.html" title="Portada" id="logo">SolBasta</a>
+        <nav>
+          <ul>
+            <li><a href="subastas-en-vivo.html" title="#"><span>Subastas</span>En vivo</a></li>
+            <li><a href="subastas-terminadas.html" title="#"><span>Subastas</span> Terminadas</a></li>
+            <li><a href="subastas-proximas.html" title="#"><span>Subastas</span> Proximas</a></li>
+            <li><a href="subastas-categorias.html" title="#">Categorias</a></li>
+            <li class="como"><a href="como-juego.html" title="#">Como juego</a></li>
+            <!--li.anaranjado: a(href="testimonios.html", title="#") Testimonios-->
+            <li class="anaranjado"><a href="comprar-solsasos.html" title="#">Comprar solsasos</a></li>
+            <li class="cuenta"><a href="mi-cuenta-resumen.html" title="#">Mi cuenta</a>
+              <ul>
+                <li><a href="mi-cuenta-resumen.html" title="#" class="icon-usuario">Resumen</a></li>
+                <li><a href="mi-cuenta-editar-informacion.html" title="#" class="icon-editar">Editar informacion</a></li>
+                <li><a href="mi-cuenta-mis-direcciones.html" title="#" class="icon-marcador">Mis direcciones</a></li>
+                <li><a href="mi-cuenta-historial-de-solsasos.html" title="#" class="icon-archivos">Historial de solsazos</a></li>
+                <li><a href="mi-cuenta-subastas-ganadas.html" title="#" class="icon-copa">Subastas ganadas</a></li>
+                <li><a href="mi-cuenta-pagos.html" title="#" class="icon-billete">Pagos</a></li>
+                <li><a href="mi-cuenta-invitados.html" title="#" class="icon-usuarios">Invitados</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div id="usuario">
+          <!--#opciones
+          a(href="registrarse-html", title="Registrarse") Registrarse
+          a(href="iniciar-sesion.html", title="Iniciar Sesión") Iniciar Sesión
+          --><span>Hola,<b> verocn1093</b> tienes<b> 10</b> solsazo(s) disponibles</span>
+        </div>
+      </div>
+    </header>
+    <main id="detalles-subasta">
+      <header class="am">
+        <div id="mini-slider">
+          <div id="imagenes">
+            <ul>
+              <li><img src="imagenes/mochila.png" alt="#"></li>
+              <li><img src="imagenes/proxima3.png" alt="#"></li>
+              <li><img src="imagenes/mochila.png" alt="#"></li>
+            </ul>
+            <div id="grande"><img src="imagenes/mochila.png" alt="#"><img src="imagenes/proxima3.png" alt="#"><img src="imagenes/mochila.png" alt="#"></div>
+          </div>
+          <h3>Mochila adidas<span>Precio del mercado<b> s/.3,250</b></span></h3><span>(Fotografías referenciales)</span>
+        </div>
+        <div id="subasta">
+          <!-- 1° Estado (Por defecto): No se agrega ninguna 'clase', ya que el primer estado vendría a ser la visualización de la subasta sin iniciar sesión y con la subasta con un tiempo mayor a 10 segundos.-->
+          <!-- 2° Estado (clase 'oferta'): Se está visualizando la subasta, habiendo iniciado sesión previamente, y con la subasta con un tiempo mayor a 10 segundos. [<div id="subasta" clase="oferta"]-->
+          <!-- 3° Estado (clase 'segundos-su'): Visualizando la subasta sin iniciar sesión, pero con un tiempo menor a 10 segundos. [<div id="subasta" clase="segundos-su"]-->
+          <!-- 4° Estado (clase 'segundos-cu'): Visualizando la subasta habiendo iniciado sesión, y con un tiempo menor a 10 segundos [<div id="subasta" clase="segundos-cu"]-->
+          <!-- 5° Estado (clase 'vendido'): Visualizando la subasta ya terminada, osea, q yá se gano el producto [<div id="subasta" clase="vendido"]-->
+          <!-- Extras: en conjunto a los estados se le puede agregar dos clases mas llamadas: 'recordatorio1' y 'recordatorio2', las cuales mostrarán dos recordatorios que solo se visualizarán dependiendo si el usuario alla elegido verlos o no.-->
+          <p>!Empieza la emoción! Recuerda que cuando el tiempo llegue a cero (00:00:00) el último en ofertar !GANA!
+            <button>Ya no quiero ver esto nunca</button>
+          </p>
+          <p>!El tiempo se ha reiniciado! Esto pasa cada vez que alguien más oferta.
+            <button>Ya no quiero ver esto nunca</button>
+          </p>
+          <h3> <b>Vendido</b><b>00:01:38</b><span>S/.2.38</span><i><span></span><span></span><span></span></i></h3><img src="imagenes/avatar.png" alt="Avatar"><strong>Verocn1093</strong>
+          <button>Oferta</button><a href="#">Inicia Sesión</a><b>Ganado</b><span>Con <b>cada oferta </b>el precio de la subasta <b>aumenta en S/.0.01</b></span>
+          <!--span verocn fué el usuario
+          b  ganador,
+          |  con un total de
+          b  9 oferta(s)		
+          -->
+        </div>
+        <div id="historial">
+          <h3>Historial de ofertas</h3>
+          <ul>
+            <li>verocn1093<b>s/. 1.98</b></li>
+            <li>verocn1093<b>s/. 2.98</b></li>
+            <li>verocn1093<b>s/. 3.98</b></li>
+            <li>verocn1093<b>s/. 4.98</b></li>
+            <li>verocn1093<b>s/. 5.98</b></li>
+            <li>verocn1093<b>s/. 6.98</b></li>
+            <li>verocn1093<b>s/. 7.98</b></li>
+            <li>verocn1093<b>s/. 8.98</b></li>
+            <li>verocn1093<b>s/. 9.98</b></li>
+            <li>verocn1093<b>s/. 10.98</b></li>
+            <li>verocn1093<b>s/. 11.98</b></li>
+            <li>verocn1093<b>s/. 12.98</b></li>
+            <li>verocn1093<b>s/. 13.98</b></li>
+            <li>verocn1093<b>s/. 14.98</b></li>
+            <li>verocn1093<b>s/. 15.98</b></li>
+            <li>verocn1093<b>s/. 16.98</b></li>
+            <li>verocn1093<b>s/. 17.98</b></li>
+            <li>verocn1093<b>s/. 18.98</b></li>
+            <li>verocn1093<b>s/. 19.98</b></li>
+            <li>verocn1093<b>s/. 20.98</b></li>
+            <li>verocn1093<b>s/. 21.98</b></li>
+            <li>verocn1093<b>s/. 22.98</b></li>
+            <li>verocn1093<b>s/. 23.98</b></li>
+            <li>verocn1093<b>s/. 24.98</b></li>
+            <li>verocn1093<b>s/. 25.98</b></li>
+          </ul>
+          <hr><a href="#" title="#">Ir a las subastas en vivo</a>
+          <p><a href="#" title="#"><img src="imagenes/1.png" alt="#"></a><a href="#" title="#"><img src="imagenes/2.png" alt="#"></a><a href="#" title="#"><img src="imagenes/3.png" alt="#"></a><a href="#" title="#"><img src="imagenes/4.png" alt="#"></a><a href="#" title="#"><img src="imagenes/5.png" alt="#"></a>
+          </p>
+        </div>
+        <hr>
+      </header>
+      <section id="descripcion" class="am">
+        <h2>Descripcion del producto</h2>
+        <p>Una mochila versátil para llevar tus elementos esenciales del día a día. Con bloques de color en contraste para darle un look fresco y moderno, presenta un diseño con un bolsillo principal de cremallera, tiras ergonómicas, material acolchado de malla y un recubrimiento en la parte inferior que protege tu trainig.</p>
+        <div class="video">
+          <div class="archivo">
+            <video>
+              <!--source-->
+            </video>
+            <button id="granplay"></button>
+          </div>
+          <div class="controles">
+            <button id="play"></button>
+            <button id="pausa"></button>
+            <div class="lineadetiempo"></div>
+          </div>
+        </div>
+      </section>
+      <section id="especificaciones">
+        <div class="am">
+          <p><img src="imagenes/detalles/mochila-detalle.png" alt="#"></p>
+          <div class="texto subasta">
+            <h2>Especificaciones</h2>
+            <ul>
+              <li>Compartimiento principal con cremallera, bolsillo vertical con cremallera en la parte frontal superior y bolsillo frontal oculto con cremallera para los objetos de valor</li>
+              <li>Correas ajustables para los hombros con diseño ergonómico y papeles acolchados con tejido de malla que favorecen la ventlación</li>
+              <li>Parte inferior laminada con TPE muy resistente al desgaste</li>
+              <li>Dimensiones: 16 cm x 3 cm x 46 cm</li>
+              <li>Tejido liso 1% poliéster</li>
+              <li>Silueta ergonómica de los tirantes del hombro</li>
+              <li>Peso ideal: 248g</li>
+            </ul>
+          </div>
+          <p><img src="imagenes/detalles/mochila-detalle.png" alt="#"></p>
+        </div>
+        <div class="extra subasta">
+          <div class="am">
+            <ul>
+              <li><span>Precio Inicial:</span> S/.0.00</li>
+              <li><span>Fecha y Hora de Inicio:</span> Mie, Dic 16 2015,  12:00:00 PM</li>
+              <li><span>Costo de Envio:</span> S/.0.00</li>
+              <li><span># de Subasta:</span> 7576	</li>
+              <li><span>Fecha de Cierre:</span> Jue Dic 17 2015,  01:33:58 pm</li>
+              <li><span>Información de Entrega:</span> Entrega gratuita</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="am">
+        <div class="promo-redes">
+          <h2> <span>Entérate de</span>Promociones y novedades<span>únicas en:</span></h2><a href="#" title="Facebook" class="icon-facebook"><span>Facebook </span></a><a href="#" title="Youtube" class="icon-youtube"><span>Youtube</span></a><a href="#" title="Instagram" class="icon-instagram"><span>Instagran</span></a>
+        </div>
+        <div class="desarrollo">
+          <div class="testimonio">
+            <h3>Testimonios</h3>
+            <p> <span></span>Gracias solbasta, por el play station 4, solo con 3 ofertas me lo gane. Muy seguros y efectivos.<span></span></p>
+          </div>
+          <div class="enlaces">
+            <div class="lista">
+              <h3>Acerca de Solbasta</h3>
+              <ul>
+                <li><a href="#" title="#">¿Que es solbasta?</a></li>
+                <li><a href="#" title="#">¿Quienes somos?</a></li>
+                <li><a href="#" title="#" class="resalte">Tipos de subastas</a></li>
+                <li><a href="#" title="#" class="activo">Testimonios</a></li>
+                <li><a href="#" title="#">Registrate ahora</a></li>
+              </ul>
+            </div>
+            <div class="lista">
+              <h3>Servicio al cliente</h3>
+              <ul>
+                <li><a href="#" title="#">Ayuda y soporte</a></li>
+                <li><a href="#" title="#">¿Como funciona?</a></li>
+                <li><a href="#" title="#">Preguntas frecuentes</a></li>
+                <li><a href="#" title="#">Politica de envios</a></li>
+                <li><a href="#" title="#">Contáctanos</a></li>
+              </ul>
+            </div>
+            <div class="lista">
+              <h3>Políticas y condiciones</h3>
+              <ul>
+                <li><a href="#" title="#">Política de privacidad</a></li>
+                <li><a href="#" title="#">Política de garantía y devoluciones</a></li>
+                <li><a href="#" title="#">Terminos y condiciones</a></li>
+                <li><a href="#" title="#">No es un juego de azar</a></li>
+                <li><a href="#" title="#" class="resalte">Libro de reclamaciones</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tarjetas">
+            <h2>Paga con:</h2><a href="#" title="Pago Efectivo"><img src="imagenes/pago-efectivo.png" alt="Pago efectivo"></a><a href="#" title="Paypal"><img src="imagenes/paypal.png" alt="Paypal"></a><a href="#" title="Visa, Mastercard, Dinners Club, Discover, American Express"><img src="imagenes/tarjetas.png" alt="Visa, Mastercard, Dinners Club, Discover, American Express"></a>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="am"> 
+          <p>Todos los derechos reservados. El uso de éste sitio web implica la aceptación de los Términos y Condiciones de Uso y Política de Privacidad de Solbasta S.R.L * Porcentajes de ahorro referenciales, el ahorro total depende de los soles utilizados para ofertar.</p>
+        </div>
+      </aside>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

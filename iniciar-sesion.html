@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Solbasta | Iniciar Sesión</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="webicons/styles.css">
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+  </head>
+  <body class="marfil">
+    <header>
+      <div class="am"><a href="index.html" title="Portada" id="logo">SolBasta</a>
+        <nav>
+          <ul>
+            <li><a href="subastas-en-vivo.html" title="#"><span>Subastas</span>En vivo</a></li>
+            <li><a href="subastas-terminadas.html" title="#"><span>Subastas</span> Terminadas</a></li>
+            <li><a href="subastas-proximas.html" title="#"><span>Subastas</span> Proximas</a></li>
+            <li><a href="subastas-categorias.html" title="#">Categorias</a></li>
+            <li class="como"><a href="como-juego.html" title="#">Como juego</a></li>
+            <li class="anaranjado"><a href="testimonios.html" title="#">Testimonios</a></li>
+            <!--li.anaranjado: a(href="comprar-solsasos.html", title="#") Comprar solsasos-->
+            <!--li.cuenta
+            a(href="mi-cuenta-resumen.html", title="#") Mi cuenta
+            ul
+            	li: a(href="mi-cuenta-resumen.html", title="#").icon-usuario Resumen
+            	li: a(href="mi-cuenta-editar-informacion.html", title="#").icon-editar Editar informacion
+            	li: a(href="mi-cuenta-mis-direcciones.html", title="#").icon-marcador Mis direcciones
+            	li: a(href="mi-cuenta-historial-de-solsasos.html", title="#").icon-archivos Historial de solsazos
+            	li: a(href="mi-cuenta-subastas-ganadas.html", title="#").icon-copa Subastas ganadas
+            	li: a(href="mi-cuenta-pagos.html", title="#").icon-billete Pagos
+            	li: a(href="mi-cuenta-invitados.html", title="#").icon-usuarios Invitados
+            
+            -->
+          </ul>
+        </nav>
+        <div id="usuario">
+          <div id="opciones"><a href="registrarte.html" title="Registrarse">Registrarte</a><a href="iniciar-sesion.html" title="Iniciar Sesión">Iniciar Sesión</a></div>
+          <!--span Hola,
+          b  verocn1093
+          |  tienes
+          b  10
+          |  solsazo(s) disponibles
+          
+          -->
+        </div>
+      </div>
+    </header>
+    <main id="iniciar-sesion">
+      <!-- LOS ELEMENTOS #registro-exitoso y #error, solo serán visibles si se les cambia su opacidad a "1", a travez de la propiedad CSS 'opacity';-->
+      <div class="am">
+        <div id="registro-exitoso"><b>¡Registro exitoso!</b> Inicia Sesión para confirmar tu cuenta</div>
+        <div class="intro">
+          <h2>Usuario nuevo<span>!Unete y empieza a ahorrar hoy!</span></h2>
+          <p>Solbasta es una experiencia única de compras en Internet a través de subastas al centavo, aquí encontrarás los mejores productos a precios increíblemente bajos. Únete a los miles de ganadores y <b>ahorra hasta 99% </b>sobre los precios de mercado.</p><a href="registrarte.html" title="Registrate aquí">Regístrate aquí</a>
+          <p><img src="imagenes/iniciar-sesion/1.png"><img src="imagenes/iniciar-sesion/2.png"><img src="imagenes/iniciar-sesion/3.png"><img src="imagenes/iniciar-sesion/4.png"><img src="imagenes/iniciar-sesion/5.png">
+          </p>
+        </div>
+        <form>
+          <h1>Inicia Sesión</h1>
+          <p>
+            <input name="usuario" placeholder="Nombre de usuario" type="text" value=""><span class="icon-usuario"></span>
+          </p>
+          <p>
+            <input name="clave" autocomplete="off" placeholder="Contraseña" type="password" value=""><span class="icon-candado1"></span>
+          </p>
+          <p>
+            <input id="recordarme" type="checkbox" value="recordarme">
+            <label for="recordarme">Recuerda mi cuenta</label>
+          </p>
+          <p>
+            <input name="submit" value="Ingresa y gana" type="submit">
+          </p>
+          <p>¿Olvidaste tu nombre de usuario o contraseña?<a href="#" title="Recuperar usuario o contraseña">Dale click aquí</a></p>
+          <div id="error"> <b>Ocurrió un error:</b> El usuario o la clave son incorrectos o no existen, trate de nuevo.	</div>
+        </form>
+        <div class="promo-redes">
+          <h2> <span>Entérate de</span>Promociones y novedades<span>únicas en:</span></h2><a href="#" title="Facebook" class="icon-facebook"><span>Facebook </span></a><a href="#" title="Youtube" class="icon-youtube"><span>Youtube</span></a><a href="#" title="Instagram" class="icon-instagram"><span>Instagran</span></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="am">
+        <div class="desarrollo">
+          <div class="testimonio">
+            <h3>Testimonios</h3>
+            <p> <span></span>Gracias solbasta, por el play station 4, solo con 3 ofertas me lo gane. Muy seguros y efectivos.<span></span></p>
+          </div>
+          <div class="enlaces">
+            <div class="lista">
+              <h3>Acerca de Solbasta</h3>
+              <ul>
+                <li><a href="#" title="#">¿Que es solbasta?</a></li>
+                <li><a href="#" title="#">¿Quienes somos?</a></li>
+                <li><a href="#" title="#" class="resalte">Tipos de subastas</a></li>
+                <li><a href="#" title="#" class="activo">Testimonios</a></li>
+                <li><a href="#" title="#">Registrate ahora</a></li>
+              </ul>
+            </div>
+            <div class="lista">
+              <h3>Servicio al cliente</h3>
+              <ul>
+                <li><a href="#" title="#">Ayuda y soporte</a></li>
+                <li><a href="#" title="#">¿Como funciona?</a></li>
+                <li><a href="#" title="#">Preguntas frecuentes</a></li>
+                <li><a href="#" title="#">Politica de envios</a></li>
+                <li><a href="#" title="#">Contáctanos</a></li>
+              </ul>
+            </div>
+            <div class="lista">
+              <h3>Políticas y condiciones</h3>
+              <ul>
+                <li><a href="#" title="#">Política de privacidad</a></li>
+                <li><a href="#" title="#">Política de garantía y devoluciones</a></li>
+                <li><a href="#" title="#">Terminos y condiciones</a></li>
+                <li><a href="#" title="#">No es un juego de azar</a></li>
+                <li><a href="#" title="#" class="resalte">Libro de reclamaciones</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tarjetas">
+            <h2>Paga con:</h2><a href="#" title="Pago Efectivo"><img src="imagenes/pago-efectivo.png" alt="Pago efectivo"></a><a href="#" title="Paypal"><img src="imagenes/paypal.png" alt="Paypal"></a><a href="#" title="Visa, Mastercard, Dinners Club, Discover, American Express"><img src="imagenes/tarjetas.png" alt="Visa, Mastercard, Dinners Club, Discover, American Express"></a>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="am"> 
+          <p>Todos los derechos reservados. El uso de éste sitio web implica la aceptación de los Términos y Condiciones de Uso y Política de Privacidad de Solbasta S.R.L * Porcentajes de ahorro referenciales, el ahorro total depende de los soles utilizados para ofertar.</p>
+        </div>
+      </aside>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

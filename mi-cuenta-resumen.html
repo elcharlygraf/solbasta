@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Solbasta | Mi Cuenta &raquo; Resumen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="webicons/styles.css">
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="am"><a href="index.html" title="Portada" id="logo">SolBasta</a>
+        <nav>
+          <ul>
+            <li><a href="subastas-en-vivo.html" title="#"><span>Subastas</span>En vivo</a></li>
+            <li><a href="subastas-terminadas.html" title="#"><span>Subastas</span> Terminadas</a></li>
+            <li><a href="subastas-proximas.html" title="#"><span>Subastas</span> Proximas</a></li>
+            <li><a href="subastas-categorias.html" title="#">Categorias</a></li>
+            <li class="como"><a href="como-juego.html" title="#">Como juego</a></li>
+            <!--li.anaranjado: a(href="testimonios.html", title="#") Testimonios-->
+            <li class="anaranjado"><a href="comprar-solsasos.html" title="#">Comprar solsasos</a></li>
+            <li class="cuenta"><a href="mi-cuenta-resumen.html" title="#">Mi cuenta</a>
+              <ul>
+                <li><a href="mi-cuenta-resumen.html" title="#" class="icon-usuario">Resumen</a></li>
+                <li><a href="mi-cuenta-editar-informacion.html" title="#" class="icon-editar">Editar informacion</a></li>
+                <li><a href="mi-cuenta-mis-direcciones.html" title="#" class="icon-marcador">Mis direcciones</a></li>
+                <li><a href="mi-cuenta-historial-de-solsasos.html" title="#" class="icon-archivos">Historial de solsazos</a></li>
+                <li><a href="mi-cuenta-subastas-ganadas.html" title="#" class="icon-copa">Subastas ganadas</a></li>
+                <li><a href="mi-cuenta-pagos.html" title="#" class="icon-billete">Pagos</a></li>
+                <li><a href="mi-cuenta-invitados.html" title="#" class="icon-usuarios">Invitados</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div id="usuario">
+          <!--#opciones
+          a(href="registrarse-html", title="Registrarse") Registrarse
+          a(href="iniciar-sesion.html", title="Iniciar Sesión") Iniciar Sesión
+          --><span>Hola,<b> verocn1093</b> tienes<b> 10</b> solsazo(s) disponibles</span>
+        </div>
+      </div>
+    </header>
+    <main id="mi-cuenta">
+      <div class="am">
+        <div class="sub-navegacion">
+          <nav>
+            <ul>
+              <li><a href="mi-cuenta-resumen.html" title="#" class="icon-usuario activo">Resumen</a></li>
+              <li><a href="mi-cuenta-editar-informacion.html" title="#" class="icon-editar">Editar informacion</a></li>
+              <li><a href="mi-cuenta-mis-direcciones.html" title="#" class="icon-marcador">Mis direcciones</a></li>
+              <li><a href="mi-cuenta-historial-de-solsasos.html" title="#" class="icon-archivos">Historial de solsazos</a></li>
+              <li><a href="mi-cuenta-subastas-ganadas.html" title="#" class="icon-copa">Subastas ganadas</a></li>
+              <li><a href="mi-cuenta-pagos.html" title="#" class="icon-billete">Pagos</a></li>
+              <li><a href="mi-cuenta-invitados.html" title="#" class="icon-usuarios">Invitados</a></li>
+            </ul>
+          </nav>
+          <ul class="extra">
+            <li><a id="micodigo" href="#" title="Copiar mi código">Solsasos Gratis<span>Este es tu codigo<span class="icon-ticket">WE66VBDD</span>Compartelo con tus amigos para que lo ingresen en su registro y<b> gana solsazos.</b></span></a></li>
+            <li><a href="#" title="#">Compra solsazos</a></li>
+            <li><a href="#" title="#">Ayuda</a></li>
+          </ul>
+        </div>
+        <section id="resumen">
+          <h1><span>Resumen</span></h1>
+          <div class="desarrollo"><a href="mi-cuenta-editar-informacion.html" title="Editar" class="icon-editar">Editar</a><img src="imagenes/avatar.png" alt="Avatar" id="avatar">
+            <h2>verocn1093<span>Veronica Campos</span><span>verockn1093@hotmail.com</span></h2>
+            <ul>
+              <li><span class="icon-telefono"></span>Numero de contacto<span>991234567</span></li>
+              <li><span class="icon-megafono"></span>Codigo 'Gana Solsazos'<span>MiCodigo123</span></li>
+              <li><span class="icon-marcador"></span>Direccion de entrega<span>Calle mi direccion 123, mi distrito</span></li>
+            </ul>
+            <p id="iconos" class="accesos-directos">
+              <button><span class="icon-archivos2"></span></button>
+              <button><span class="icon-play"></span></button>
+              <button><span class="icon-camara"></span></button>
+              <button><span class="icon-reloj"></span></button>
+              <button><span class="icon-regalo"></span></button>
+            </p>
+          </div>
+          <ul class="numeros">
+            <li><span>Tienes</span><span>10</span><span>Solzasos</span><span>para ofertar y ganar</span><a href="#" title="Compra y gana">Compra y gana</a></li>
+            <li><span><img src="imagenes/proxima1.png" alt="Última subasta ganada"></span><span><span>3</span><span><span>Subasta(s)</span><span>ganada(s)</span></span></span></li>
+            <li><span><img src="imagenes/terminadas/2.png" alt="Última subasta ganada" class="sepia"></span><span><span>0</span><span><span>Subasta(s)</span><span>por pagar</span></span></span></li>
+            <li><span>2</span><span>invitados pendientes</span><a href="#" title="Invita más amigos">Invita mas amigos</a></li>
+          </ul>
+          <div id="secciones">
+            <section class="suscripcion">
+              <h2>Mi suscripción</h2>
+              <div class="contenedor">
+                <div class="articulos">
+                  <article class="accion">
+                    <h3>Si no deseas recibir más promociones en tu correo electrónico, por favor, da click aquí:</h3>
+                    <button>Cancelar suscripción</button>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <section class="videos">
+              <h2>Mis Videos</h2>
+              <div class="contenedor">
+                <div class="articulos">
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Tesminio de</span> Monopoly 1</h3><a href="#" title="#">Ver video</a>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Tesminio de</span> Monopoly 2</h3><a href="#" title="#">Ver video</a>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Tesminio de</span> Monopoly 3</h3><a href="#" title="#">Ver video</a>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Tesminio de</span> Monopoly 4</h3><a href="#" title="#">Ver video</a>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Tesminio de</span> Monopoly 5</h3><a href="#" title="#">Ver video</a>
+                    </div>
+                  </article>
+                  <article class="accion">
+                    <div class="imagen"><span class="icon-play"></span></div>
+                    <div class="texto">
+                      <h3>Agrega un video<span>y gana solsazos</span></h3><a href="#" title="#">Sube un video</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <button><span class="icon-flecha-izquierda"></span></button>
+              <button><span class="icon-flecha-derecha"></span></button>
+            </section>
+            <section class="fotos">
+              <h2>Mis Fotos</h2>
+              <div class="contenedor">
+                <div class="articulos">
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Foto de</span> Monopoly 1</h3><a href="#" title="#">Ver foto</a>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Foto de</span> Monopoly 2</h3><a href="#" title="#">Ver foto</a>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Foto de</span> Monopoly 3</h3><a href="#" title="#">Ver foto</a>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Foto de</span> Monopoly 4</h3><a href="#" title="#">Ver foto</a>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><img src="imagenes/hombre.png"></div>
+                    <div class="texto">
+                      <h3> <span>Foto de</span> Monopoly 5</h3><a href="#" title="#">Ver foto</a>
+                    </div>
+                  </article>
+                  <article class="accion">
+                    <div class="imagen"><span class="icon-camara"></span></div>
+                    <div class="texto">
+                      <h3>Agrega una foto<span>y gana solsazos</span></h3><a href="#" title="#">Sube una foto</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <button><span class="icon-flecha-izquierda"></span></button>
+              <button><span class="icon-flecha-derecha"></span></button>
+            </section>
+            <section class="recordatorios">
+              <h2>Mis recordatorios</h2>
+              <div class="contenedor">
+                <div class="articulos">
+                  <article>
+                    <button> <span class="icon-equis"></span>	Eliminar</button>
+                    <div class="imagen"><img src="imagenes/proximas/proximas/1.png"></div>
+                    <div class="texto">
+                      <p>
+                        <time datetime="2015-05-17"> <b>Martes 11</b>/05/16</time>11:00:00 PM
+                      </p>
+                      <h3>Mochila Adidas</h3>
+                      <h4>precio de mercado<b> s/.100</b></h4><a href="#" title="#">Descripción</a>
+                    </div>
+                  </article>
+                  <article>
+                    <button> <span class="icon-equis"></span>	Eliminar</button>
+                    <div class="imagen"><img src="imagenes/proximas/proximas/2.png"></div>
+                    <div class="texto">
+                      <p>
+                        <time datetime="2015-05-17"> <b>Martes 12</b>/05/16</time>12:00:00 PM
+                      </p>
+                      <h3>Mochila Adidas</h3>
+                      <h4>precio de mercado<b> s/.200</b></h4><a href="#" title="#">Descripción</a>
+                    </div>
+                  </article>
+                  <article>
+                    <button> <span class="icon-equis"></span>	Eliminar</button>
+                    <div class="imagen"><img src="imagenes/proximas/proximas/3.png"></div>
+                    <div class="texto">
+                      <p>
+                        <time datetime="2015-05-17"> <b>Martes 13</b>/05/16</time>13:00:00 PM
+                      </p>
+                      <h3>Mochila Adidas</h3>
+                      <h4>precio de mercado<b> s/.300</b></h4><a href="#" title="#">Descripción</a>
+                    </div>
+                  </article>
+                  <article>
+                    <button> <span class="icon-equis"></span>	Eliminar</button>
+                    <div class="imagen"><img src="imagenes/proximas/proximas/4.png"></div>
+                    <div class="texto">
+                      <p>
+                        <time datetime="2015-05-17"> <b>Martes 14</b>/05/16</time>14:00:00 PM
+                      </p>
+                      <h3>Mochila Adidas</h3>
+                      <h4>precio de mercado<b> s/.400</b></h4><a href="#" title="#">Descripción</a>
+                    </div>
+                  </article>
+                  <article>
+                    <button> <span class="icon-equis"></span>	Eliminar</button>
+                    <div class="imagen"><img src="imagenes/proximas/proximas/5.png"></div>
+                    <div class="texto">
+                      <p>
+                        <time datetime="2015-05-17"> <b>Martes 15</b>/05/16</time>15:00:00 PM
+                      </p>
+                      <h3>Mochila Adidas</h3>
+                      <h4>precio de mercado<b> s/.500</b></h4><a href="#" title="#">Descripción</a>
+                    </div>
+                  </article>
+                  <article>
+                    <button> <span class="icon-equis"></span>	Eliminar</button>
+                    <div class="imagen"><img src="imagenes/proximas/proximas/6.png"></div>
+                    <div class="texto">
+                      <p>
+                        <time datetime="2015-05-17"> <b>Martes 16</b>/05/16</time>16:00:00 PM
+                      </p>
+                      <h3>Mochila Adidas</h3>
+                      <h4>precio de mercado<b> s/.600</b></h4><a href="#" title="#">Descripción</a>
+                    </div>
+                  </article>
+                  <article>
+                    <button> <span class="icon-equis"></span>	Eliminar</button>
+                    <div class="imagen"><img src="imagenes/proximas/proximas/7.png"></div>
+                    <div class="texto">
+                      <p>
+                        <time datetime="2015-05-17"> <b>Martes 17</b>/05/16</time>17:00:00 PM
+                      </p>
+                      <h3>Mochila Adidas</h3>
+                      <h4>precio de mercado<b> s/.700</b></h4><a href="#" title="#">Descripción</a>
+                    </div>
+                  </article>
+                  <article>
+                    <button> <span class="icon-equis"></span>	Eliminar</button>
+                    <div class="imagen"><img src="imagenes/proximas/proximas/8.png"></div>
+                    <div class="texto">
+                      <p>
+                        <time datetime="2015-05-17"> <b>Martes 18</b>/05/16</time>18:00:00 PM
+                      </p>
+                      <h3>Mochila Adidas</h3>
+                      <h4>precio de mercado<b> s/.800</b></h4><a href="#" title="#">Descripción</a>
+                    </div>
+                  </article>
+                  <article class="accion">
+                    <div class="imagen sepia"><img src="imagenes/proxima1.png"></div>
+                    <div class="texto">
+                      <h3>Agrega un recordatorio</h3>
+                      <h4>Que no se te pasen las subastas</h4><a href="#" title="#">Subastas en vivo</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <button><span class="icon-flecha-izquierda"></span></button>
+              <button><span class="icon-flecha-derecha"></span></button>
+            </section>
+            <section class="regalos">
+              <h2>Mis Regalos</h2>
+              <div class="contenedor">
+                <div class="articulos">
+                  <article>
+                    <div class="imagen"><span class="icon-facebook"></span></div>
+                    <div class="texto">
+                      <h3> <span>Ganaste este codigo</span>Para canejar solsazos</h3><b>FRT4582T</b>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><span class="icon-twitter"></span></div>
+                    <div class="texto">
+                      <h3> <span>Ganaste este codigo</span>Para canejar solsazos</h3><b>FRT4582T</b>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><span class="icon-instagram"></span></div>
+                    <div class="texto">
+                      <h3> <span>Ganaste este codigo</span>Para canejar solsazos</h3><b>FRT4582T	</b>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="imagen"><span class="icon-facebook"></span></div>
+                    <div class="texto">
+                      <h3> <span>Ganaste este codigo</span>Para canejar solsazos</h3><b>FRT4582T	</b>
+                    </div>
+                  </article>
+                  <article class="accion">
+                    <h3><span>No tienes regalos</span>Ve a nuestros fan page</h3>
+                    <p><a href="#" title="Facebook" class="icon-facebook"><span>Facebook </span></a><a href="#" title="Instagram" class="icon-instagram"><span>Instagran</span></a><a href="#" title="Youtube" class="icon-twitter"><span>Twitter</span></a></p>
+                  </article>
+                </div>
+              </div>
+              <button><span class="icon-flecha-izquierda"></span></button>
+              <button><span class="icon-flecha-derecha">			</span></button>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="am">
+        <div class="promo-redes">
+          <h2> <span>Entérate de</span>Promociones y novedades<span>únicas en:</span></h2><a href="#" title="Facebook" class="icon-facebook"><span>Facebook </span></a><a href="#" title="Youtube" class="icon-youtube"><span>Youtube</span></a><a href="#" title="Instagram" class="icon-instagram"><span>Instagran</span></a>
+        </div>
+        <div class="desarrollo">
+          <div class="testimonio">
+            <h3>Testimonios</h3>
+            <p> <span></span>Gracias solbasta, por el play station 4, solo con 3 ofertas me lo gane. Muy seguros y efectivos.<span></span></p>
+          </div>
+          <div class="enlaces">
+            <div class="lista">
+              <h3>Acerca de Solbasta</h3>
+              <ul>
+                <li><a href="#" title="#">¿Que es solbasta?</a></li>
+                <li><a href="#" title="#">¿Quienes somos?</a></li>
+                <li><a href="#" title="#" class="resalte">Tipos de subastas</a></li>
+                <li><a href="#" title="#" class="activo">Testimonios</a></li>
+                <li><a href="#" title="#">Registrate ahora</a></li>
+              </ul>
+            </div>
+            <div class="lista">
+              <h3>Servicio al cliente</h3>
+              <ul>
+                <li><a href="#" title="#">Ayuda y soporte</a></li>
+                <li><a href="#" title="#">¿Como funciona?</a></li>
+                <li><a href="#" title="#">Preguntas frecuentes</a></li>
+                <li><a href="#" title="#">Politica de envios</a></li>
+                <li><a href="#" title="#">Contáctanos</a></li>
+              </ul>
+            </div>
+            <div class="lista">
+              <h3>Políticas y condiciones</h3>
+              <ul>
+                <li><a href="#" title="#">Política de privacidad</a></li>
+                <li><a href="#" title="#">Política de garantía y devoluciones</a></li>
+                <li><a href="#" title="#">Terminos y condiciones</a></li>
+                <li><a href="#" title="#">No es un juego de azar</a></li>
+                <li><a href="#" title="#" class="resalte">Libro de reclamaciones</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tarjetas">
+            <h2>Paga con:</h2><a href="#" title="Pago Efectivo"><img src="imagenes/pago-efectivo.png" alt="Pago efectivo"></a><a href="#" title="Paypal"><img src="imagenes/paypal.png" alt="Paypal"></a><a href="#" title="Visa, Mastercard, Dinners Club, Discover, American Express"><img src="imagenes/tarjetas.png" alt="Visa, Mastercard, Dinners Club, Discover, American Express"></a>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="am"> 
+          <p>Todos los derechos reservados. El uso de éste sitio web implica la aceptación de los Términos y Condiciones de Uso y Política de Privacidad de Solbasta S.R.L * Porcentajes de ahorro referenciales, el ahorro total depende de los soles utilizados para ofertar.</p>
+        </div>
+      </aside>
+    </footer>
+    <script type="text/javascript" src="js/script.js">				</script>
+  </body>
+</html>

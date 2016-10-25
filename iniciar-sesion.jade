@@ -1,0 +1,141 @@
+doctype html
+html(lang="es")
+	head
+		title Solbasta | Iniciar Sesión
+		meta(charset="utf-8")
+		meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(rel="stylesheet" href="style.css")
+		link(rel="stylesheet" href="webicons/styles.css")
+		script(type="text/javascript", src="jquery-3.1.1.min.js")
+			
+	body.marfil
+		header
+			.am
+				a(href="index.html", title="Portada")#logo SolBasta
+				nav
+					ul
+						li: a(href="subastas-en-vivo.html", title="#")
+							span Subastas
+							| En vivo
+						li: a(href="subastas-terminadas.html", title="#")
+							span Subastas
+							|  Terminadas
+						li: a(href="subastas-proximas.html", title="#")
+							span Subastas
+							|  Proximas
+						li: a(href="subastas-categorias.html", title="#") Categorias
+						li.como: a(href="como-juego.html", title="#") Como juego
+						li.anaranjado: a(href="testimonios.html", title="#") Testimonios
+						//li.anaranjado: a(href="comprar-solsasos.html", title="#") Comprar solsasos
+						//li.cuenta
+							a(href="mi-cuenta-resumen.html", title="#") Mi cuenta
+							ul
+								li: a(href="mi-cuenta-resumen.html", title="#").icon-usuario Resumen
+								li: a(href="mi-cuenta-editar-informacion.html", title="#").icon-editar Editar informacion
+								li: a(href="mi-cuenta-mis-direcciones.html", title="#").icon-marcador Mis direcciones
+								li: a(href="mi-cuenta-historial-de-solsasos.html", title="#").icon-archivos Historial de solsazos
+								li: a(href="mi-cuenta-subastas-ganadas.html", title="#").icon-copa Subastas ganadas
+								li: a(href="mi-cuenta-pagos.html", title="#").icon-billete Pagos
+								li: a(href="mi-cuenta-invitados.html", title="#").icon-usuarios Invitados
+
+				#usuario
+					#opciones
+						a(href="registrarte.html", title="Registrarse") Registrarte
+						a(href="iniciar-sesion.html", title="Iniciar Sesión") Iniciar Sesión
+					//span Hola,
+							b  verocn1093
+							|  tienes
+							b  10
+							|  solsazo(s) disponibles
+		
+		main#iniciar-sesion
+			// LOS ELEMENTOS #registro-exitoso y #error, solo serán visibles si se les cambia su opacidad a "1", a travez de la propiedad CSS 'opacity';
+			.am
+				#registro-exitoso
+					b ¡Registro exitoso!
+					|  Inicia Sesión para confirmar tu cuenta
+				.intro
+					h2 Usuario nuevo
+						span !Unete y empieza a ahorrar hoy!
+					p Solbasta es una experiencia única de compras en Internet a través de subastas al centavo, aquí encontrarás los mejores productos a precios increíblemente bajos. Únete a los miles de ganadores y 
+						b ahorra hasta 99% 
+						| sobre los precios de mercado.
+					a(href="registrarte.html", title="Registrate aquí") Regístrate aquí
+					p
+						-for(var i = 1; i <= 5; i++)
+							img(src="imagenes/iniciar-sesion/#{i}.png")
+				form
+					h1 Inicia Sesión
+					p
+						input(name="usuario", placeholder="Nombre de usuario", type="text", value="")
+						span.icon-usuario
+					p
+						input(name="clave", autocomplete="off", placeholder="Contraseña", type="password", value="")
+						span.icon-candado1
+					p
+						input(id="recordarme", type="checkbox", value="recordarme")
+						label(for="recordarme") Recuerda mi cuenta
+					p
+						input(name="submit", value="Ingresa y gana", type="submit")
+					p ¿Olvidaste tu nombre de usuario o contraseña?
+						a(href="#", title="Recuperar usuario o contraseña") Dale click aquí
+					#error 
+						b Ocurrió un error:
+						|  El usuario o la clave son incorrectos o no existen, trate de nuevo.	
+
+				.promo-redes
+					h2 
+						span Entérate de
+						| Promociones y novedades
+						span únicas en:
+					a(href="#", title="Facebook").icon-facebook: span Facebook 
+					a(href="#", title="Youtube").icon-youtube: span Youtube
+					a(href="#", title="Instagram").icon-instagram: span Instagran
+		
+		footer
+			.am
+				.desarrollo
+					.testimonio
+						h3 Testimonios
+						p 
+							span
+							| Gracias solbasta, por el play station 4, solo con 3 ofertas me lo gane. Muy seguros y efectivos.
+							span
+					.enlaces
+						.lista
+							h3 Acerca de Solbasta
+							ul
+								li: a(href="#", title="#") ¿Que es solbasta?
+								li: a(href="#", title="#") ¿Quienes somos?
+								li: a.resalte(href="#", title="#") Tipos de subastas
+								li: a.activo(href="#", title="#") Testimonios
+								li: a(href="#", title="#") Registrate ahora
+						.lista
+							h3 Servicio al cliente
+							ul
+								li: a(href="#", title="#") Ayuda y soporte
+								li: a(href="#", title="#") ¿Como funciona?
+								li: a(href="#", title="#") Preguntas frecuentes
+								li: a(href="#", title="#") Politica de envios
+								li: a(href="#", title="#") Contáctanos
+						.lista
+							h3 Políticas y condiciones
+							ul
+								li: a(href="#", title="#") Política de privacidad
+								li: a(href="#", title="#") Política de garantía y devoluciones
+								li: a(href="#", title="#") Terminos y condiciones
+								li: a(href="#", title="#") No es un juego de azar
+								li: a.resalte(href="#", title="#") Libro de reclamaciones
+					.tarjetas
+						h2 Paga con:
+						a(href="#", title="Pago Efectivo")
+							img(src="imagenes/pago-efectivo.png" alt="Pago efectivo")
+						a(href="#", title="Paypal")
+							img(src="imagenes/paypal.png" alt="Paypal")
+						a(href="#", title="Visa, Mastercard, Dinners Club, Discover, American Express")
+							img(src="imagenes/tarjetas.png" alt="Visa, Mastercard, Dinners Club, Discover, American Express")
+				
+			aside
+				.am 
+					p Todos los derechos reservados. El uso de éste sitio web implica la aceptación de los Términos y Condiciones de Uso y Política de Privacidad de Solbasta S.R.L * Porcentajes de ahorro referenciales, el ahorro total depende de los soles utilizados para ofertar.
+		script(type="text/javascript", src="js/script.js")
